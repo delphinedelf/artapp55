@@ -13,7 +13,9 @@ class ButtonComponent extends React.Component {
         style={styles.button}
         onPress={this.props.gallery}
         underlayColor="#fff">
-        <Text style={styles.textButton}>Details</Text>
+        <Text allowFontScaling={false} style={styles.textButton}>
+          Details
+        </Text>
       </TouchableOpacity>
     );
   }
@@ -21,18 +23,19 @@ class ButtonComponent extends React.Component {
 
 const styles = StyleSheet.create({
   button: {
-    marginTop: 20,
-    paddingTop: 20,
-    backgroundColor: "#F2EECB",
+    paddingVertical: 20,
+    paddingHorizontal: 30,
+    backgroundColor: '#F2EECB',
     borderColor: '#bbb',
     borderWidth: 1,
     marginHorizontal: 80,
     borderRadius: 20,
-  },
+  }, 
   textButton: {
-    textAlign: 'center',
-    fontSize: 10,
+    fontSize: 22,
     fontFamily: 'AcademyEngravedLetPlain',
+    //color: '#fff',
+    alignSelf: 'center',
   },
 });
 

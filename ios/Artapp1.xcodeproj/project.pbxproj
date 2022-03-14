@@ -36,6 +36,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Artapp1/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Artapp1/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Artapp1/main.m; sourceTree = "<group>"; };
+		2BF36B1E27DD4819005DA598 /* Artapp1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Artapp1.entitlements; path = Artapp1/Artapp1.entitlements; sourceTree = "<group>"; };
 		52D4652C71EB83A151E32AE7 /* Pods-Artapp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artapp1.release.xcconfig"; path = "Target Support Files/Pods-Artapp1/Pods-Artapp1.release.xcconfig"; sourceTree = "<group>"; };
 		61194AE3F8AA4341A9F27C9F /* Pods-Artapp1-Artapp1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artapp1-Artapp1Tests.debug.xcconfig"; path = "Target Support Files/Pods-Artapp1-Artapp1Tests/Pods-Artapp1-Artapp1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		761DD5E31F4304A50CE25F2A /* libPods-Artapp1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Artapp1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +75,6 @@
 				61194AE3F8AA4341A9F27C9F /* Pods-Artapp1-Artapp1Tests.debug.xcconfig */,
 				EA695F41294DD5DD531A8E86 /* Pods-Artapp1-Artapp1Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,6 +98,7 @@
 		13B07FAE1A68108700A75B9A /* Artapp1 */ = {
 			isa = PBXGroup;
 			children = (
+				2BF36B1E27DD4819005DA598 /* Artapp1.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -484,7 +485,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_ENTITLEMENTS = Artapp1/Artapp1.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 8666T6ZCTN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Artapp1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -496,8 +501,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.artapp.Artapp1;
 				PRODUCT_NAME = Artapp1;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -510,7 +516,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_ENTITLEMENTS = Artapp1/Artapp1.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 8666T6ZCTN;
 				INFOPLIST_FILE = Artapp1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,8 +531,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.artapp.Artapp1;
 				PRODUCT_NAME = Artapp1;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

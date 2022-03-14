@@ -10,9 +10,8 @@ class App extends React.Component {
     results: [],
     gallery: false,
   };
-  
-  async componentDidMount(){
-
+// charger API
+  async componentDidMount() {
     const results = this.randomUniqueNum(100,5);
     this.setState({results});
     const pictures = await ajax.fetchPicture();
@@ -32,7 +31,7 @@ class App extends React.Component {
       gallery: false,
     });
   };
- 
+ // recuperer les 2 images différentes
   currentPicture = () => {
     return this.state.pictures.filter(
 
@@ -45,7 +44,7 @@ class App extends React.Component {
     );
 
  };
-
+// tableau de nombres tirés au hasard et différents
   randomUniqueNum = (range, outputCount) => {
     let arr = []
     for (let i = 1; i <= range; i++) {
@@ -79,7 +78,8 @@ class App extends React.Component {
     }
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>ART APP</Text>
+        <Text style={styles.header} allowFontScaling={false}>ART APP</Text>
+        
       </View>
     );
   }
@@ -91,11 +91,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   header: {
-    fontSize: 10,
+    fontSize: 25,
     fontFamily: 'Academy Engraved LET',
+    
   },
   list: {
     marginTop: 100,
+    
   },
 });
 export default App;

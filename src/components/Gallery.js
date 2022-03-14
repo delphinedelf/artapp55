@@ -20,7 +20,7 @@ class Gallery extends React.Component {
       <>
         <View style={styles.gallery}>
           <TouchableOpacity onPress={this.props.onBack}>
-            <Text style={styles.backlink}>Back</Text>
+            <Text allowFontScaling={false} style={styles.backlink}>Back</Text>
           </TouchableOpacity>
         </View>
         <SafeAreaView style={{flex: 1}}>
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   backlink: {
-    fontSize: 6,
+    fontSize: 20,
     color: '#0000EE',
     padding: 10,
   },
