@@ -6,7 +6,7 @@ Developped only for IOS devices.
 ## Description
 
 A page with thumbnails of 2 pictures randomly selected from the [SMK API](https://www.smk.dk/en/article/smk-api/). By clicking on DETAILS button, access to a slide of the 2 pictures previously selected with zoom and pinch effect.</br>
-[Logo] (https://fr.freepik.com/vecteurs/fond) Fond vector by GarryKillian [FreePik] (fr.freepik.com)
+[Logo](https://fr.freepik.com/vecteurs/fond) Fond vector by GarryKillian [FreePik](fr.freepik.com)
 
 ## Installation
 
